@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Big Shoulders Display', cursive;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+:root {
+  --primary-orange: hsl(31, 77%, 52%);
+  --primary-dark-cyan: hsl(184, 100%, 22%);
+  --primary-very-dark-cyan: hsl(179, 100%, 13%);
+  --neutral-transparent-white: hsla(0, 0%, 100%, 0.65);
+  --neutral-very-light-gray: hsl(0, 0%, 95%);
+}
+
+img {
+  display: block;
+  width: 3.5em;
+  height: auto;
+}
+
+.wrapper-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 80vw;
+  margin: 2em auto;
+}
+
+.wrapper-card > :nth-child(1) {
+  background-color: var(--primary-orange);
+  border-radius: 8px 8px 0 0;
+}
+
+.wrapper-card > :nth-child(1) > .inner-card > button {
+  color: var(--primary-orange);
+}
+
+.wrapper-card > :nth-child(2) {
+  background-color: var(--primary-dark-cyan);
+}
+
+.wrapper-card > :nth-child(2) > .inner-card > button {
+  color: var(--primary-dark-cyan);
+}
+
+.wrapper-card > :nth-child(3) {
+  background-color: var(--primary-very-dark-cyan);
+  border-radius: 0 0 8px 8px;
+}
+
+.wrapper-card > :nth-child(3) > .inner-card > button {
+  color: var(--primary-very-dark-cyan);
+}
+
+.card-component {
+  height: 45vh;
+}
+
+.inner-card {
+  width: 70%;
+  height: 83%;
+  margin: 2em auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 1.5em;
+}
+
+.header {
+  font-family: 'Big Shoulders Display';
+  color: var(--neutral-very-light-gray);
+}
+
+.description {
+  font-family: 'Lexend Deca';
+  color: var(--neutral-transparent-white);
+  font-size: small;
+}
+
+.button {
+  width: 50%;
+  background-color: var(--neutral-very-light-gray);
+  border: none;
+  border-radius: 30px;
+  padding: 1em;
+  transition: 0.3s;
+}
+
+.button:hover {
+  cursor: pointer;
+  box-shadow: 8px 8px var(--neutral-transparent-white);
+}
+
+@media only screen and (min-width: 1440px) {
+  .wrapper-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 50vw;
+    height: 45vh;
+  }
+
+  .wrapper-card > :nth-child(1) {
+    border-radius: 8px 0 0 8px;
+  }
+
+  .wrapper-card > :nth-child(3) {
+    border-radius: 0 8px 8px 0;
+  }
+
+  .inner-card {
+    width: 76%;
+  }
+
+  .button {
+    width: 60%;
+    margin-top: auto;
+  }
+}
