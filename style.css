@@ -94,7 +94,7 @@ img {
 }
 
 /* ipad */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
   .wrapper-card {
     width: 50vw;
   }
@@ -122,7 +122,6 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 50vw;
-    height: 45vh;
   }
 
   .wrapper-card > :nth-child(1) {
