@@ -93,7 +93,31 @@ img {
   box-shadow: 8px 8px var(--neutral-transparent-white);
 }
 
+/* ipad */
+@media only screen and (min-width: 768px) {
+  .wrapper-card {
+    width: 50vw;
+  }
+
+  .card-component {
+    height: 40vh;
+  }
+
+  .button {
+    margin-top: auto;
+  }
+}
+
+/* desktop */
 @media only screen and (min-width: 1440px) {
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+  }
+
   .wrapper-card {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
