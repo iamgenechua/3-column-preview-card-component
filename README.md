@@ -80,6 +80,9 @@ Users should be able to:
 }
 ```
 
+3. I actually had quite a bit of trouble making the outer div have rounded borders, and the inner div obeying the rounded borders of the outer div.
+   I can actually make the inner div have overflow: hidden to ensure that the inner div doesn't extend past the outer div's rounded borders.
+
 ### Continued development
 
 I want to learn how to better use pseudoselectors like :nth-child better and more easily.
